@@ -11,7 +11,7 @@ export class DataService {
 
   constructor() { }
 
-  changeGoal(goal){
-    this.goals.next(goal);
+  changeGoals(goals){
+    this.goals.next(goals);
   }
 }

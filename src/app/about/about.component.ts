@@ -15,8 +15,11 @@ export class AboutComponent implements OnInit {
 
   constructor(private route: ActivatedRoute, private router: Router, private _data: DataService) {
     this.route.params.subscribe(res => {
-      console.log(res.id);
-      this.id = res.id;
+      if(res.id){
+
+        console.log(res.id);
+        this.id = res.id;
+      }
     });
   }
 
